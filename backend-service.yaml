@@ -1,0 +1,10 @@
+kind: Service
+apiVersion: v1
+metadata:
+        name: backend-service
+spec:
+        selector:
+                app: iot-backend
+        ports:
+                - protocol: TCP
+                  port: 9000
